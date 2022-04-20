@@ -2,6 +2,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 class HistNorm:
+
     def __init__(self, image):
         self.image = np.asarray(Image.open(image))
         self.length, self.width, channels = self.image.shape
